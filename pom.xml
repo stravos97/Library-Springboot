@@ -11,8 +11,8 @@
     <groupId>com.sparta</groupId>
     <artifactId>Library</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Library-Springboot</name>
-    <description>Library-Springboot</description>
+    <name>Library</name>
+    <description>Library</description>
     <url/>
     <licenses>
         <license/>
