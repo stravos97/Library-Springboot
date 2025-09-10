@@ -1,12 +1,10 @@
 package com.sparta.library.entities;
 
-
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "books")
 public class Book {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -15,7 +13,7 @@ public class Book {
     @Column(name = "Title", nullable = false)
     private String title; // Renamed to lowercase 'title'
 
-    @ManyToOne(fetch = FetchType.EAGER) // determines when related entities are loaded from the database
+    @ManyToOne(fetch = FetchType.EAGER)
     private Author author;
 
     public Book(String title, Author author) {
@@ -24,6 +22,7 @@ public class Book {
     }
 
     public Book() {
+
     }
 
     public Integer getId() {
@@ -50,4 +49,3 @@ public class Book {
         this.author = author;
     }
 }
-
